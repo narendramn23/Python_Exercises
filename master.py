@@ -1,15 +1,26 @@
 total = 10000
-#effort = 3
-effort = int(input("what is your daily effort ? "))
+effort = 3
 
-days = total // effort
-rem_hrs = total % effort
-month  = days // 30 
-rem_days  = days % 30
+days  = total // effort
+hrs   = total % effort
+
+month = days // 30 
+days  = days % 30
+
 years = month // 12
-rem_month = month % 12
+month = month % 12
 
-print(years, "yrs", rem_month, "months", rem_days, "days", rem_hrs, "hrs")
+print(years, "yrs", month, "months", days, "days", hrs, "hrs")
 
 
-#######
+#function divide(num, den)
+#   quot = num / den
+#   rem = num % den
+#   return quot, rem
+
+#total = 10000
+#effort = 3
+
+#days, hrs = divide(total, effort)
+#month, days = divide(days, 30 )
+#years, month = divide(month, 12 )

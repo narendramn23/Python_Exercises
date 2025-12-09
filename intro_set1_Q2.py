@@ -1,17 +1,16 @@
-'''
-This program prints 17 tables 
-'''
-for multiples in range (1, 11):
 
-    answer = 17 * multiples
+boot flow 
+what is jump code >>>> 
 
-    print("17 X",multiples, "=" ,answer)
-    
+BIOS >>>HOB hand of block
 
-    
+bios boot folw on all architcture 
 
+CPU >>>>
 
-    
+PCIE 
+CXL ,power management ,sleep state .
 
-    
+Discrete function 
+
 

@@ -12,5 +12,9 @@ while count < 11:
     count = count + 1
 
 
-    
+#using for loop
+
+for num in range (1, 11):
+    ans = number * num
+    print(number, "X", num, "=", ans)
     

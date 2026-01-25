@@ -1,27 +1,34 @@
 
 
-def find_num(num1,num2):
-    if len(num1) == 2:
-        print(num1, "is 2 digit number")
-    elif len(num1) == 3:
-        print(num1, "is 3 digit number")
+def _2_digit_num(num):
+    if 10 <= num <= 99:
+        print(num, "number is 2 dight number")
+
+def _3_digit_num(num):
+    if 100<= num <= 999:
+        print( num, "number is 3 dight number")
+
+
+# main unction 
+def performance_check():
+    num1 = int(input("enter first number: "))
+    num2 = int(input("enter second number: "))
+    if 10 <= num1 <= 99:
+        _2_digit_num(num1)
+    elif 100<= num1 <= 999:
+        _3_digit_num(num1)
     else:
-        print("printing as it is", num1)
-    
-    if len(num2) == 2:
-        print(num2, "is 2 digit number")
-    elif len(num2) == 3:
-        print(num2, "is 2 digit number")
+        print("number as it is", num1)
+
+    if 10 <= num2 <= 99:
+        _2_digit_num(num2)
+    elif 100<= num2 <= 999:
+        _3_digit_num(num2)
     else:
-        print("printing as it is", num2)   
+        print("number as it is", num2)
 
 
 
-if __name__ == "__main__":
-    print("main test function call",__name__)
+performance_check()
 
-    num1 = input("enter your first number: ")
-    num2 = input("enter your second number: ")
-
-    find_num(num1,num2)
-    
+               
